@@ -1,0 +1,272 @@
+a {
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img {
+  max-height: 80px;
+}
+.header-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+.header-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.header-content p {
+  font-size: 1.25rem;
+}
+.footer {
+  background-color: #f8f9fa;
+}
+.footer .list-unstyled li {
+  line-height: 1.6;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: rgb(139, 0, 9);
+    box-shadow: 0px 15px 20px rgba(226, 5, 18, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+/* 
+  header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+ */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+}
+.no-arrow::after {
+    display: none !important; 
+}
+.navbar-nav .nav-link:hover {
+  color: rgb(226, 5, 18) !important; /* Red color */
+  font-weight: bold !important; /* Bold text */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute; /* Ensure the dropdown is positioned correctly */
+}
+
+.no-arrow::after {
+  display: none !important; /* Hide the default arrow */
+}
+
+.navbar-nav .nav-link:hover,
+.nav-item.dropdown:hover > .nav-link,
+.nav-item.dropdown.show > .nav-link {
+    color: rgb(226, 5, 18) !important; /* Red color */
+    font-weight: bold !important; /* Bold text */
+}
+
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown.show .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute; /* Ensure the dropdown is positioned correctly */
+}
+
+.no-arrow::after {
+    display: none !important; /* Hide the default arrow */
+}
+
+/*
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+  
+    header video {
+      display: none;
+    }
+  }
+  */
+/* Stile per le card */
+.custom-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+/* Stile per l'header */
+header {
+  position: relative;
+  overflow: hidden;
+  height: 90vh; /* Altezza dell'header aumentata */
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Overlay scuro con trasparenza */
+  z-index: 1;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 2rem; /* Padding orizzontale aumentato per spaziatura migliore */
+  text-align: center;
+}
+
+.display-3 {
+  font-size: 3.5rem; /* Dimensione del testo per una visibilità ottimale */
+  font-weight: 700; /* Grassetto per un testo impattante */
+}
+
+.lead {
+  font-size: 1.75rem; /* Dimensione del testo leggermente più grande */
+  font-weight: 400; /* Peso del carattere normale */
+}
+
+@media (min-width: 768px) {
+  .display-3 {
+      font-size: 4.5rem; /* Dimensione del testo per dispositivi più grandi */
+  }
+
+  .lead {
+      font-size: 2rem; /* Dimensione del testo per dispositivi più grandi */
+  }
+}
